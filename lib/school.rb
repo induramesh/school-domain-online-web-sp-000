@@ -21,7 +21,7 @@ class School
   
   def sort
     sorted_roster = {}
-    roster.map { |grade, names| sorted_roster(grade) = names.sort}
+    roster.map { |grade, names| sorted_roster[grade] = names.sort}
     sorted_roster
   end 
   
