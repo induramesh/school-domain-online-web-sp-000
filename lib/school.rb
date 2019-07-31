@@ -8,9 +8,10 @@ class School
   attr_accessor :name, :roster 
 
   def add_student(name, grade)
-    roster[grade] = name 
-    
-      
+    if roster[grade] == nil 
+      roster[grade] = [name]
+    else 
+      roster[grade] = roster[grade].push(name)
     end 
   end 
   
